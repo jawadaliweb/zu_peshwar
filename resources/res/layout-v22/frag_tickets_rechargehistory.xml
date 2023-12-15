@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/generate_PdfView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/footer">
+        <ListView android:id="@+id/listview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+        <TextView android:textSize="@dimen/_18sdp" android:textStyle="bold" android:gravity="center" android:id="@+id/noDataTxt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_data_found" style="@style/TextAppearance.AppCompat.Body1"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/footer" android:background="@color/colorWhite" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.google.android.material.button.MaterialButton android:textSize="@dimen/roundButtonTextSize" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/generate_Pdf" android:layout_width="match_parent" android:layout_height="@dimen/roundButtonHeight_Maindash" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:text="@string/txt_btn_GeneratePDF" android:fontFamily="@font/psr" android:layout_marginHorizontal="30dp" sweet:backgroundTint="@color/colorGreen" sweet:cornerRadius="40sp" sweet:rippleColor="@color/colorGreenlight"/>
+    </RelativeLayout>
+</RelativeLayout>

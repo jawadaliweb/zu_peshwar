@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/permissions_frag_layout" android:padding="24dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/colorGreen" android:gravity="center" android:id="@+id/tv_getting_permission" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Permissions Status"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ff6dae8e" android:id="@+id/tv_requestPermissions" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="Click to view denied permissions"/>
+            <TextView android:textSize="16sp" android:id="@+id/tv_deniedPermissionsList" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp"/>
+            <Button android:textSize="12sp" android:id="@+id/bt_getDeniedPermissions" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:text="Get" android:textAllCaps="false"/>
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ff6dae8e" android:id="@+id/tv_requestNeverAskAgainPermissions" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="Enable following permissions from Settings"/>
+            <TextView android:textSize="16sp" android:id="@+id/tv_neverAskAgainPermissionsList" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp"/>
+            <Button android:textSize="12sp" android:id="@+id/bt_openSettings" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:text="Settings" android:textAllCaps="false"/>
+            <Button android:textSize="12sp" android:layout_gravity="center" android:id="@+id/bt_checkPermissions" android:paddingLeft="20dp" android:paddingRight="20dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginTop="24dp" android:text="Check Permissions" android:textAllCaps="false" style="@style/AppTheme.RoundedCornerGreenButton"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

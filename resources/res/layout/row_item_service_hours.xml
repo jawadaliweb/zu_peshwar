@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:weightSum="1">
+        <TextView android:id="@+id/no_record_found" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="no Record found"/>
+        <com.ortiz.touchview.TouchImageView android:id="@+id/images" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    </LinearLayout>
+</RelativeLayout>

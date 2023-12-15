@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content" sweet:cardCornerRadius="8dp" sweet:cardElevation="3dp" sweet:cardUseCompatPadding="true">
+        <LinearLayout android:orientation="vertical" android:padding="5sp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="@dimen/_2sdp" android:paddingRight="10dp" android:paddingBottom="@dimen/_2sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/_4sdp" android:paddingBottom="@dimen/_4sdp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.7">
+                    <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/checkinStation_TV" android:paddingTop="@dimen/_4sdp" android:paddingBottom="@dimen/_4sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/psr"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="To" android:fontFamily="@font/psr" android:layout_marginEnd="@dimen/_5sdp"/>
+                        <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/checkoutStation_TV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="" android:fontFamily="@font/psr"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.3">
+                    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/fare_TV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="250" android:fontFamily="@font/psr"/>
+                    <TextView android:textSize="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="Rs" android:fontFamily="@font/psr"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="@dimen/_5sdp" android:paddingRight="10dp" android:paddingBottom="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:weightSum="1">
+                <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.7">
+                    <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total Travel Duration" android:fontFamily="@font/psr"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.3">
+                    <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/Duration_TV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" android:fontFamily="@font/psr"/>
+                    <TextView android:textSize="10sp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Min" android:fontFamily="@font/psr"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/colorBlack" android:paddingTop="@dimen/_2sdp" android:paddingBottom="@dimen/_2sdp" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp"/>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="@dimen/_5sdp" android:paddingRight="10dp" android:paddingBottom="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:weightSum="1">
+                <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@+id/date_TV" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="25 June 2019" android:fontFamily="@font/psr"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.5">
+                    <TextView android:textStyle="bold" android:textColor="@color/colorGreen" android:gravity="right" android:id="@+id/checkInOut" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Trip Planner"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:weightSum="1">
+                <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.5">
+                    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Check In : " android:fontFamily="@font/psr"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.5">
+                    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/darkTextColor" android:gravity="right" android:id="@+id/checkIn_Tv" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2020-10-20 02:06 PM"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:weightSum="1">
+                <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.5">
+                    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Check Out :" android:fontFamily="@font/psr"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.5">
+                    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/darkTextColor" android:gravity="right" android:id="@+id/checkOut_Tv" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2020-10-20 02:06 PM"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/colorGreen" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

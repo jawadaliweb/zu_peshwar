@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_viewpager_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/footer" android:paddingVertical="20dp">
+        <androidx.cardview.widget.CardView android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="20dp" sweet:cardCornerRadius="10dp" sweet:cardElevation="3dp" sweet:cardPreventCornerOverlap="true" sweet:cardUseCompatPadding="true">
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="40dp" android:textStyle="bold" android:textColor="@color/colorGreen" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bicycle_unlocked" android:fontFamily="@font/psr"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="200dp" android:layout_margin="20dp">
+                    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_bike_unlocked"/>
+                    <ImageView android:id="@+id/arrow_IV" android:paddingTop="50dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:src="@drawable/ic_green_arrow" android:layout_centerInParent="true" android:paddingEnd="40dp"/>
+                </RelativeLayout>
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/cycle_unlock_step_2" android:fontFamily="@font/psr"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/footer" android:background="@color/color_viewpager_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.google.android.material.button.MaterialButton android:textSize="@dimen/roundButtonTextSize" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/Btn_Next" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/roundButtonHeight_Maindash" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:text="@string/txt_btn_next" android:layout_marginHorizontal="30dp" sweet:backgroundTint="@color/colorGreen" sweet:cornerRadius="40sp" sweet:rippleColor="@color/colorGreenlight"/>
+    </RelativeLayout>
+</RelativeLayout>

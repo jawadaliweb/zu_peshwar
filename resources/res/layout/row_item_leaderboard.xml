@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:layout_margin="10dp">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@+id/no_background" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/button_shape_grey_rounded" android:adjustViewBounds="true"/>
+        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/colorWhite" android:layout_gravity="center" android:id="@+id/no" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLength="2" android:fontFamily="@font/productsansbold"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1">
+        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/colorBlack" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="@font/psr"/>
+        <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/colorGreyDark" android:id="@+id/number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="@font/psr"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/_26sdp" android:textColor="@color/colorBlack" android:gravity="center" android:id="@+id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="@font/productsansbold"/>
+        <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/colorGreyDark" android:id="@+id/time_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/minutes" android:includeFontPadding="false" android:fontFamily="@font/psr"/>
+    </LinearLayout>
+</LinearLayout>

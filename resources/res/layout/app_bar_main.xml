@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@color/colorGreen" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" sweet:popupTheme="@style/AppTheme.PopupOverlay">
+            <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:layout_gravity="center" android:id="@+id/toolbar_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:fontFamily="@font/psr"/>
+            <ru.nikartm.support.ImageBadgeView android:layout_gravity="end" android:id="@+id/notification_IV" android:paddingLeft="9dp" android:paddingTop="4dp" android:paddingRight="9dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:src="@drawable/ic_bell_icon" android:layout_marginEnd="15dp" sweet:ibv_badgeColor="@color/colorRed" sweet:ibv_badgeLimitValue="false" sweet:ibv_badgeTextColor="@color/colorWhite" sweet:ibv_badgeTextSize="10sp" sweet:ibv_badgeTextStyle="1" sweet:ibv_badgeValue="2" sweet:ibv_fixedBadgeRadius="7dp"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <include layout="@layout/content_main"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

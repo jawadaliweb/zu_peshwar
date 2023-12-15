@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/top" android:background="@drawable/office_location_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/colorWhite" android:layout_gravity="center_vertical" android:id="@+id/time_left_text" android:background="@drawable/time_left_bg" android:padding="@dimen/_15sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bicycle Station" android:drawableTop="@drawable/ic_bicycle_yellow"/>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:padding="@dimen/_5sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_marginStart="@dimen/_10sdp" android:layout_marginEnd="@dimen/_10sdp">
+                <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/colorBlack" android:layout_gravity="center_vertical" android:id="@+id/stationName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mall of Hayatabad"/>
+                <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/colorBlack" android:layout_gravity="center_vertical" android:id="@+id/address_location" android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="32.71, 77.23"/>
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton android:textSize="@dimen/_9sdp" android:textColor="@color/colorWhite" android:background="@color/colorGreen" android:layout_width="@dimen/_50sdp" android:layout_height="wrap_content" android:text="View" android:textAllCaps="false" android:layout_marginEnd="@dimen/_5sdp" sweet:backgroundTint="@color/colorGreen"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-8dp" android:src="@drawable/ic_down" android:tint="@color/colorGreen" android:layout_below="@+id/top" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name"/>
+    </RelativeLayout>
+</FrameLayout>

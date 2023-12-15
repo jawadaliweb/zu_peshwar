@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="8">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/naviBtn_MyProfile" android:background="@drawable/navi_btn_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="@dimen/_3sdp" android:weightSum="1" android:layout_weight="1">
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.2">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_navi_my_profile" android:scaleType="center"/>
+        </FrameLayout>
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/txt_naviBtn_my_profile" android:layout_weight="0.8" android:fontFamily="@font/psr" android:textAlignment="textStart"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/naviBtn_Fare" android:background="@drawable/navi_btn_bg" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="@dimen/_3sdp" android:weightSum="1" android:layout_weight="1">
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.2">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_navi_fare" android:scaleType="center"/>
+        </FrameLayout>
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/txt_naviBtn_fare" android:layout_weight="0.8"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/naviBtn_FAQ" android:background="@drawable/navi_btn_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="@dimen/_3sdp" android:weightSum="1" android:layout_weight="1">
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.2">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_navi_faq" android:scaleType="center"/>
+        </FrameLayout>
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/txt_naviBtn_faq" android:layout_weight="0.8" android:fontFamily="@font/psr" android:textAlignment="textStart"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/naviBtn_Helpline" android:background="@drawable/navi_btn_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="@dimen/_3sdp" android:weightSum="1" android:layout_weight="1">
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.2">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_navi_helpline" android:scaleType="center"/>
+        </FrameLayout>
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/txt_naviBtn_helpline" android:layout_weight="0.8" android:fontFamily="@font/psr" android:textAlignment="textStart"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/naviBtn_YoutubeChannel" android:background="@drawable/navi_btn_bg" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="@dimen/_3sdp" android:weightSum="1" android:layout_weight="1">
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.2">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_navi_youtube" android:scaleType="center"/>
+        </FrameLayout>
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/txt_naviBtn_youtube_channel" android:layout_weight="0.8" android:fontFamily="@font/psr" android:textAlignment="textStart"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/naviBtn_CustomerFeedback" android:background="@drawable/navi_btn_bg" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="@dimen/_3sdp" android:weightSum="1" android:layout_weight="1">
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.2">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_navi_customer_feedback" android:scaleType="center"/>
+        </FrameLayout>
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/txt_naviBtn_customer_feedback" android:layout_weight="0.8" android:fontFamily="@font/psr"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/naviBtn_InviteFriend" android:background="@drawable/navi_btn_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="@dimen/_3sdp" android:weightSum="1" android:layout_weight="1">
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.2">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_navi_invite_friend" android:scaleType="center"/>
+        </FrameLayout>
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/txt_naviBtn_invite_a_friend" android:layout_weight="0.8" android:fontFamily="@font/psr" android:textAlignment="textStart"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/naviBtn_WhatsNew" android:background="@drawable/navi_btn_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="@dimen/_3sdp" android:weightSum="1" android:layout_weight="1">
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.2">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_what_new" android:scaleType="center"/>
+        </FrameLayout>
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/whats_new" android:layout_weight="0.8" android:fontFamily="@font/psr" android:textAlignment="textStart"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/naviBtn_Setting" android:background="@drawable/navi_btn_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="@dimen/_3sdp" android:weightSum="1" android:layout_weight="1">
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.2">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_navi_settings" android:scaleType="center"/>
+        </FrameLayout>
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/txt_naviBtn_setting" android:layout_weight="0.8" android:fontFamily="@font/psr" android:textAlignment="textStart"/>
+    </LinearLayout>
+</LinearLayout>

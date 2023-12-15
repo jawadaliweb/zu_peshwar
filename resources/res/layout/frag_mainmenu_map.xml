@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ortiz.touchview.TouchImageView android:id="@+id/ZuMap_IV" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/zu_map"/>
+    <FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="-20dp">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxHeight="@dimen/eighty_dp" android:indeterminateOnly="true" android:minHeight="@dimen/fifty_dp" android:indeterminateTint="@color/colorGreen" style="?android:attr/progressBarStyleLarge"/>
+        </LinearLayout>
+        <com.lmkt.zupeshawar.Utilities.Map.PinView android:id="@+id/imageView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

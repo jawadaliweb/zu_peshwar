@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/colorTransparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/custom_loading_imageView" android:background="@color/colorTransparent" android:layout_width="120dp" android:layout_height="120dp" android:src="@drawable/loading" sweet:layout_constraintBottom_toBottomOf="0" sweet:layout_constraintEnd_toEndOf="0" sweet:layout_constraintStart_toStartOf="0" sweet:layout_constraintTop_toTopOf="0"/>
+        <TextView android:textColor="@color/colorGreen" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="Pleasewait ..."/>
+    </LinearLayout>
+</FrameLayout>

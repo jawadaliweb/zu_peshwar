@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/_20sdp" android:paddingBottom="@dimen/_20sdp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.7">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/route_IV" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_bus_route_01" android:adjustViewBounds="true"/>
+            <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/colorWhite" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/route_TV" android:background="@color/colorGreen" android:paddingLeft="@dimen/_15sdp" android:paddingTop="@dimen/_2sdp" android:paddingRight="@dimen/_15sdp" android:paddingBottom="@dimen/_2sdp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Xpress 01" android:layout_marginStart="@dimen/_15sdp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/_20sdp" android:paddingBottom="@dimen/_20sdp" android:layout_width="0dp" android:layout_height="wrap_content" android:weightSum="1" android:layout_weight="0.3">
+        <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/totalStops" android:layout_width="match_parent" android:layout_height="0dp" android:text="30 Rs." android:layout_weight="0.6" android:fontFamily="@font/psr"/>
+        <TextView android:textSize="@dimen/_10sdp" android:gravity="center" android:id="@+id/estimatedTime" android:layout_width="match_parent" android:layout_height="0dp" android:text="Fare" android:layout_weight="0.3" android:fontFamily="@font/psr"/>
+    </LinearLayout>
+</LinearLayout>

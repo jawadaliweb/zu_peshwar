@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1" android:layout_above="@+id/bottom">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:layout_weight="0.3" android:layout_marginHorizontal="30dp">
+            <ImageView android:padding="20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_zu_splash_logo" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+        </FrameLayout>
+        <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="10dp" android:fillViewport="true" android:layout_weight="0.7">
+            <LinearLayout android:gravity="top" android:orientation="vertical" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Large" android:textColor="@color/colorBlack" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Following are the revised rates of fare for Zu Bicycle." android:fontFamily="@font/psr"/>
+                <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:weightSum="1">
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="10 Minutes" android:layout_weight="0.5" android:fontFamily="@font/psr"/>
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="center" android:id="@+id/Name_TV" android:layout_width="0dp" android:layout_height="match_parent" android:text="40 Rs." android:layout_weight="0.5" android:fontFamily="@font/psr"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:weightSum="1">
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="20 Minutes" android:layout_weight="0.5" android:fontFamily="@font/psr"/>
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="center" android:id="@+id/Email_TV" android:layout_width="0dp" android:layout_height="match_parent" android:text="60 Rs." android:layout_weight="0.5" android:fontFamily="@font/psr"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:weightSum="1">
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="30 Minutes" android:layout_weight="0.5" android:fontFamily="@font/psr"/>
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="center" android:id="@+id/DOB_TV" android:layout_width="0dp" android:layout_height="match_parent" android:text="80 Rs." android:layout_weight="0.5" android:fontFamily="@font/psr"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:weightSum="1">
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="40 Minutes" android:layout_weight="0.5" android:fontFamily="@font/psr"/>
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="center" android:id="@+id/TotalBalance_TV" android:layout_width="0dp" android:layout_height="match_parent" android:text="100 Rs." android:layout_weight="0.5" android:fontFamily="@font/psr"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:weightSum="1">
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="50 Minutes" android:layout_weight="0.5" android:fontFamily="@font/psr"/>
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="center" android:id="@+id/ZuBicycle_TV" android:layout_width="0dp" android:layout_height="match_parent" android:text="120 Rs." android:layout_weight="0.5" android:fontFamily="@font/psr"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:weightSum="1">
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="60 Minutes" android:layout_weight="0.5" android:fontFamily="@font/psr"/>
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="center" android:id="@+id/MemberSince_TV" android:layout_width="0dp" android:layout_height="match_parent" android:text="140 Rs." android:layout_weight="0.5" android:fontFamily="@font/psr"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/bottom" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.google.android.material.button.MaterialButton android:textSize="@dimen/roundButtonTextSize" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/Btn_zuWallet" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/roundButtonHeight_Maindash" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:text="@string/txt_btn_zuWallet" android:fontFamily="@font/psr" android:layout_marginHorizontal="30dp" sweet:backgroundTint="@color/colorGreen" sweet:cornerRadius="40sp" sweet:rippleColor="@color/colorGreenlight"/>
+    </RelativeLayout>
+</RelativeLayout>

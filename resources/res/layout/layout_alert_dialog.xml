@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/relative_layout_dialog" android:padding="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" sweet:layout_constraintBottom_toBottomOf="0" sweet:layout_constraintEnd_toEndOf="0" sweet:layout_constraintStart_toStartOf="0" sweet:layout_constraintTop_toTopOf="0" style="@style/MaterialDialog">
+            <com.airbnb.lottie.LottieAnimationView android:id="@+id/animation_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="175dp" android:scaleType="centerCrop" android:layout_alignParentTop="true" sweet:lottie_autoPlay="true" sweet:lottie_loop="true"/>
+            <TextView android:id="@+id/textView_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/animation_view" style="@style/MaterialDialog.Title"/>
+            <TextView android:id="@+id/textView_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/textView_title" style="@style/MaterialDialog.Message"/>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:weightSum="1" android:layout_below="@+id/textView_message">
+                <com.google.android.material.button.MaterialButton android:id="@+id/button_negative" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.5" sweet:iconGravity="2" style="@style/MaterialDialog.NegativeButton"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/button_positive" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.5" sweet:iconGravity="2" style="@style/MaterialDialog.PositiveButton"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

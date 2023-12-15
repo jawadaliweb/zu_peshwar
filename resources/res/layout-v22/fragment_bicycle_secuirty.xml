@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/alreadySubscription" android:background="@drawable/ic_corner_radius" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" android:layout_centerInParent="true" android:elevation="@dimen/_5sdp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <ImageView android:layout_width="@dimen/_90sdp" android:layout_height="@dimen/_90sdp" android:layout_marginTop="-2dp" android:src="@drawable/ic_header" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+            <TextView android:textColor="@color/colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_25sdp" android:text="Deposited" android:rotation="-45" android:layout_alignParentStart="true" style="@style/MaterialDialog.Message"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/infoView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/cycleImg" android:background="@drawable/circle_drawable" android:layout_width="@dimen/_120sdp" android:layout_height="@dimen/_120sdp" android:layout_centerHorizontal="true">
+                <ImageView android:layout_gravity="center" android:layout_width="@dimen/_80sdp" android:layout_height="@dimen/_80sdp" android:src="@drawable/ic_securitydeposit"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:id="@+id/duration_TV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="Security Amount" android:layout_below="@+id/cycleImg" android:layout_centerHorizontal="true" style="@style/MaterialDialog.Title"/>
+            <TextView android:textSize="@dimen/_28sdp" android:textStyle="bold" android:id="@+id/priceTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rs. 3000" android:layout_below="@+id/duration_TV" android:layout_centerHorizontal="true" style="@style/MaterialDialog.Title"/>
+            <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:id="@+id/membershipTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_1sdp" android:text="Subscription Date" android:layout_below="@+id/priceTv" android:layout_centerHorizontal="true" style="@style/MaterialDialog.Message"/>
+            <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/txt_color_Darkgrey" android:id="@+id/subscriptionDateTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="25-2-2021 10:20 PM" android:layout_below="@+id/membershipTv" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/cancelPackage" android:background="@drawable/ic_corner_radius" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_30sdp" android:layout_alignParentBottom="true">
+            <com.google.android.material.button.MaterialButton android:textSize="@dimen/roundButtonTextSize" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/cancel_action" android:layout_width="match_parent" android:layout_height="@dimen/roundButtonHeight_Maindash" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:text="@string/txt_refund_security" android:textAllCaps="false" android:fontFamily="@font/psr" android:layout_marginHorizontal="30dp" sweet:backgroundTint="@color/colorRed" sweet:cornerRadius="40sp" sweet:rippleColor="@color/colorGreenlight"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/noSubscription" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/checkView" android:layout_alignParentTop="true">
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:id="@+id/desposit_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" android:text="@string/txt_dummy_long"/>
+        </ScrollView>
+        <LinearLayout android:gravity="center" android:id="@+id/checkView" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1" android:layout_above="@+id/Btn_Proceed">
+            <CheckBox android:id="@+id/agreeTerms" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.1"/>
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="I agree with the terms and conditions" android:layout_weight="0.8"/>
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton android:textSize="@dimen/roundButtonTextSize" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/Btn_Proceed" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/roundButtonHeight_Maindash" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:text="@string/txt_btn_activate_subsc" android:layout_alignParentBottom="true" android:fontFamily="@font/psr" android:layout_marginHorizontal="30dp" sweet:backgroundTint="@color/colorGreen" sweet:cornerRadius="40sp" sweet:rippleColor="@color/colorGreenlight"/>
+    </RelativeLayout>
+</RelativeLayout>

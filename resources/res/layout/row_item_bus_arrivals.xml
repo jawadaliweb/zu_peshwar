@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingLeft="8dp" android:paddingTop="16dp" android:paddingRight="8dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/_5sdp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.98">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/route_IV" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_bus_route_01" android:adjustViewBounds="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/colorWhite" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/route_TV" android:background="@color/colorGreen" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="Xpress 01"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/origin" android:fontFamily="@font/psr"/>
+            <TextView android:textSize="@dimen/_11sdp" android:id="@+id/routeSource_TV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mall Of Hayatabad" android:fontFamily="@font/psr"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/destination" android:fontFamily="@font/psr"/>
+            <TextView android:textSize="@dimen/_11sdp" android:id="@+id/routeDestination_TV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bab-e-Peshawar" android:fontFamily="@font/psr"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/arrivals" android:fontFamily="@font/psr"/>
+            <TextView android:textSize="@dimen/_11sdp" android:id="@+id/arrivalTime1_TV" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="11:20 am" android:fontFamily="@font/psr"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/arrivalTime1_rv" android:layout_width="wrap_content" android:layout_height="400dp" sweet:layoutManager="androidx.recyclerview.widget.GridLayoutManager" sweet:spanCount="4"/>
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView android:id="@+id/view2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_weight="0.02" sweet:cardBackgroundColor="@color/color_Bus_Route_01" sweet:cardCornerRadius="@dimen/_5sdp" sweet:cardElevation="0dp"/>
+</LinearLayout>

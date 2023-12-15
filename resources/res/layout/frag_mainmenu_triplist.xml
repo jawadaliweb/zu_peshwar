@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/header" android:background="@color/colorWhite" android:padding="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1" android:elevation="4dp">
+        <ImageView android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/ic_up_down_dotted_arrows" android:layout_weight="0.1"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.85">
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/From_ET_Input" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/ET_height">
+                <EditText android:textSize="@dimen/BTN_Fontsize" android:textStyle="bold" android:id="@+id/From_ET" android:focusable="true" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/txt_hint_from" android:fontFamily="@font/psr"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <View android:background="@color/colorBlack" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/To_ET_Input" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/ET_height">
+                <EditText android:textSize="@dimen/BTN_Fontsize" android:textStyle="bold" android:id="@+id/To_ET" android:focusable="true" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/txt_hint_to" android:fontFamily="@font/psr"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@+id/IV_flip" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/ic_bi_arrow" android:layout_weight="0.1"/>
+    </LinearLayout>
+    <ListView android:id="@+id/Fares_LV" android:padding="16dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/header"/>
+</RelativeLayout>

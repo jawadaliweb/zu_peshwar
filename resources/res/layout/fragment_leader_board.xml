@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:id="@+id/app_bar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="@dimen/app_bar_height">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/toolbar_layout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" sweet:contentScrim="?attr/colorPrimary" sweet:layout_scrollFlags="3">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" sweet:layout_collapseMode="2" sweet:layout_collapseParallaxMultiplier="0.7">
+                <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/leaderboard_top_background" android:scaleType="centerCrop"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/toplayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:background="@drawable/black_corner_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="15dp" android:layout_marginRight="30dp" android:layout_marginBottom="15dp">
+                        <com.google.android.material.tabs.TabLayout android:id="@+id/tabs" android:background="@color/colorBlack" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:fontFamily="@font/psr" sweet:tabBackground="@color/colorTransparent" sweet:tabIndicatorColor="@color/red" sweet:tabIndicatorFullWidth="false" sweet:tabIndicatorHeight="3dp" sweet:tabMode="1" sweet:tabSelectedTextColor="@color/colorWhite" sweet:tabTextAppearance="@style/TextAppearance.MaterialComponents.Headline6" sweet:tabTextColor="@color/colorWhite"/>
+                    </FrameLayout>
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="170dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="5dp">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="10">
+                            <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3">
+                                <ImageView android:layout_gravity="center" android:background="@drawable/ic_crown_left" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+                            </FrameLayout>
+                            <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="4"/>
+                            <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3">
+                                <ImageView android:layout_gravity="center" android:background="@drawable/ic_crown_right" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+                            </FrameLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <ImageView android:layout_gravity="center" android:background="@drawable/ic_crown" android:layout_width="120dp" android:layout_height="90dp" android:adjustViewBounds="true"/>
+                                <TextView android:textSize="@dimen/_28sdp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="1"/>
+                            </FrameLayout>
+                            <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+                            <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/colorWhite" android:id="@+id/number" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/black_corner_background" android:padding="5dp" android:layout_width="150dp" android:layout_height="90dp">
+                        <TextView android:textSize="@dimen/_40sdp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false"/>
+                        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/colorWhite" android:id="@+id/time_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-6dp" android:text="@string/minutes" android:includeFontPadding="false" android:letterSpacing="-0.05"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <include layout="@layout/content_leader_board"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

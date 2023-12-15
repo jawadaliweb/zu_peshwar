@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_weight="0.3" android:layout_marginHorizontal="@dimen/_10sdp">
+        <ImageView android:id="@+id/imageView2" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_zu_card" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+        <TextView android:textStyle="bold" android:gravity="left" android:id="@+id/mobileNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="03001234567" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true" android:layout_marginHorizontal="@dimen/_10sdp"/>
+    </RelativeLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="20dp" android:fillViewport="true" android:layout_weight="0.7">
+        <LinearLayout android:gravity="top" android:orientation="vertical" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:weightSum="1">
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textStyle="bold" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/label_name" android:layout_weight="0.3" android:fontFamily="@font/psr"/>
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="right" android:id="@+id/Name_TV" android:layout_width="0dp" android:layout_height="match_parent" android:text=" " android:layout_weight="0.7" android:fontFamily="@font/psr"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:weightSum="1">
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textStyle="bold" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/label_email" android:layout_weight="0.3" android:fontFamily="@font/psr"/>
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="right" android:id="@+id/Email_TV" android:layout_width="0dp" android:layout_height="match_parent" android:text=" " android:layout_weight="0.7" android:fontFamily="@font/psr"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:weightSum="1">
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textStyle="bold" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/label_dateOfBirth" android:layout_weight="0.4" android:fontFamily="@font/psr"/>
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="right" android:id="@+id/DOB_TV" android:layout_width="0dp" android:layout_height="match_parent" android:text=" " android:layout_weight="0.6" android:fontFamily="@font/psr"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:weightSum="1">
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textStyle="bold" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/label_card_number" android:layout_weight="0.4" android:fontFamily="@font/psr"/>
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="right" android:id="@+id/cardNo_TV" android:layout_width="0dp" android:layout_height="match_parent" android:text=" " android:layout_weight="0.6" android:fontFamily="@font/psr"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:weightSum="1">
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textStyle="bold" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/label_totalBalance" android:layout_weight="0.5" android:fontFamily="@font/psr"/>
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="right" android:id="@+id/TotalBalance_TV" android:layout_width="0dp" android:layout_height="match_parent" android:text=" " android:layout_weight="0.5" android:fontFamily="@font/psr"/> android:textStyle=&quot;bold&quot; /&gt; 
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:weightSum="1">
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textStyle="bold" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/label_zuBicycle" android:layout_weight="0.5" android:fontFamily="@font/psr"/>
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="right" android:id="@+id/ZuBicycle_TV" android:layout_width="0dp" android:layout_height="match_parent" android:text=" " android:layout_weight="0.5" android:fontFamily="@font/psr"/> android:textStyle=&quot;bold&quot; /&gt; 
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:weightSum="1">
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textStyle="bold" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/label_memberSince" android:layout_weight="0.5" android:fontFamily="@font/psr"/>
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="right" android:id="@+id/MemberSince_TV" android:layout_width="0dp" android:layout_height="match_parent" android:text=" " android:layout_weight="0.5" android:fontFamily="@font/psr"/> android:textStyle=&quot;bold&quot; /&gt; 
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:weightSum="1">
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textStyle="bold" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/label_packageExpiry" android:layout_weight="0.5" android:fontFamily="@font/psr"/>
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="right" android:id="@+id/PackageExpiry_TV" android:layout_width="0dp" android:layout_height="match_parent" android:text=" " android:layout_weight="0.5" android:fontFamily="@font/psr"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:weightSum="1">
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textStyle="bold" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/label_refundableSecurity" android:layout_weight="0.7" android:fontFamily="@font/psr"/>
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorBlack" android:gravity="right" android:id="@+id/RefundableSecurity_TV" android:layout_width="0dp" android:layout_height="match_parent" android:text=" " android:layout_weight="0.3" android:fontFamily="@font/psr"/> android:textStyle=&quot;bold&quot; /&gt; 
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

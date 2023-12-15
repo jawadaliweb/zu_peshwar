@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+    <ImageView android:id="@+id/rechargeSource_IV" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.2"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/txt_color_Darkgrey" android:id="@+id/rechargeName_TV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Jazz Cash" android:layout_weight="0.2" android:fontFamily="@font/psr"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/txt_color_Lightgrey" android:id="@+id/rechargeTime_TV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="05:06 pm" android:layout_weight="0.2" android:fontFamily="@font/psr"/>
+    </LinearLayout>
+    <TextView android:textSize="22sp" android:textStyle="bold" android:textColor="@color/colorGreen" android:gravity="center" android:id="@+id/rechargeAmount_TV" android:layout_width="0dp" android:layout_height="match_parent" android:text="200 Rs." android:layout_weight="0.3" android:fontFamily="@font/psr"/>
+</LinearLayout>

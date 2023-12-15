@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/_20sdp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.2">
+            <androidx.cardview.widget.CardView android:id="@+id/Btn_SendEmail" android:background="@color/colorWhite" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="25dp" android:foreground="?android:attr/selectableItemBackground" sweet:cardCornerRadius="10dp" sweet:cardElevation="3dp" sweet:cardPreventCornerOverlap="true" sweet:cardUseCompatPadding="true">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.2">
+                        <ImageView android:layout_gravity="center" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_email_icon"/>
+                    </FrameLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.8">
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textStyle="bold" android:textColor="@color/txt_color_Darkgrey" android:gravity="left" android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:text="@string/label_sendMail" android:fontFamily="@font/psr"/>
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Small" android:textColor="@color/txt_color_Darkgrey" android:gravity="center" android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="zu@brt.com" android:fontFamily="@font/psr"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:id="@+id/Btn_MakePhoneCall" android:background="@color/colorWhite" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:attr/selectableItemBackground" sweet:cardCornerRadius="10dp" sweet:cardElevation="3dp" sweet:cardPreventCornerOverlap="true" sweet:cardUseCompatPadding="true">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.2">
+                        <ImageView android:layout_gravity="center" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_phone_icon"/>
+                    </FrameLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.8">
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textStyle="bold" android:textColor="@color/txt_color_Darkgrey" android:gravity="left" android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:text="@string/label_makePhoneCall" android:fontFamily="@font/psr"/>
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Small" android:textColor="@color/txt_color_Darkgrey" android:gravity="center" android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(091) 111 477 477" android:fontFamily="@font/psr"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <View android:background="@color/txt_color_Lightgrey" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/_20sdp" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="1" android:layout_weight="0.8">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:weightSum="1" android:layout_weight="0.1">
+                <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@+id/RG_TicketType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkedButton="@+id/RB_Complaint">
+                    <RadioButton android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/txt_color_Darkgrey" android:layout_gravity="center" android:id="@+id/RB_Suggestion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5sdp" android:layout_marginRight="@dimen/_5sdp" android:text="@string/label_suggestion" android:fontFamily="@font/psr"/>
+                    <RadioButton android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/txt_color_Darkgrey" android:layout_gravity="center" android:id="@+id/RB_Complaint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5sdp" android:layout_marginRight="@dimen/_5sdp" android:checked="true" android:text="@string/label_complaints" android:fontFamily="@font/psr"/>
+                </RadioGroup>
+            </LinearLayout>
+            <androidx.cardview.widget.CardView android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:foreground="?android:attr/selectableItemBackground" android:layout_weight="0.15" sweet:cardCornerRadius="10dp" sweet:cardElevation="3dp" sweet:cardPreventCornerOverlap="true" sweet:cardUseCompatPadding="true">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:padding="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/category" android:scaleType="fitCenter" android:adjustViewBounds="true" android:tint="@color/primaryColor" sweet:tint="@color/primaryColor"/>
+                    <Spinner android:id="@+id/category" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:foreground="?android:attr/selectableItemBackground" android:layout_weight="0.15" sweet:cardCornerRadius="10dp" sweet:cardElevation="3dp" sweet:cardPreventCornerOverlap="true" sweet:cardUseCompatPadding="true">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:padding="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/category" android:scaleType="fitCenter" android:adjustViewBounds="true" android:tint="@color/primaryColor" sweet:tint="@color/primaryColor"/>
+                    <Spinner android:id="@+id/subCategory" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:foreground="?android:attr/selectableItemBackground" android:layout_weight="0.45" sweet:cardCornerRadius="10dp" sweet:cardElevation="3dp" sweet:cardPreventCornerOverlap="true" sweet:cardUseCompatPadding="true">
+                <EditText android:id="@+id/ET_Details" android:background="@null" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/txt_hint_writeComplaintHere" android:fontFamily="@font/psr"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/attachmentsLayout" android:background="@drawable/rectangular_bg" android:layout_width="match_parent" android:layout_height="0dp" android:layout_margin="@dimen/_10sdp" android:layout_weight="0.25">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvImages" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="13dp" sweet:layoutManager="androidx.recyclerview.widget.GridLayoutManager" sweet:layout_constraintBottom_toBottomOf="0" sweet:layout_constraintLeft_toLeftOf="0" sweet:layout_constraintRight_toRightOf="0" sweet:layout_constraintTop_toTopOf="0" sweet:spanCount="3"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/roundButtonHeight_Maindash_Layout">
+            <com.google.android.material.button.MaterialButton android:textSize="@dimen/roundButtonTextSize" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/Btn_SendTicket" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/roundButtonHeight_Maindash" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:text="@string/txt_btn_send" android:fontFamily="@font/psr" sweet:backgroundTint="@color/colorGreen" sweet:cornerRadius="40sp" sweet:rippleColor="@color/colorGreenlight"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

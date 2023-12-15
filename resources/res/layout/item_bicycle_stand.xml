@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/items" android:background="@color/colorWhite" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/_80sdp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/_12sdp" android:id="@+id/stationName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mall Of Hayatabad" android:fontFamily="@font/psr"/>
+        <RelativeLayout android:gravity="start" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="start" android:layout_gravity="center" android:id="@+id/bicycle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/imgcycles" android:layout_width="@dimen/_28sdp" android:layout_height="@dimen/_17sdp" android:src="@drawable/ic_bicycle_yellow" android:tint="@color/colorBlack" android:layout_alignParentStart="true"/>
+                <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/colorGreen" android:id="@+id/totalBicycle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7 cycles" android:layout_centerVertical="true" android:fontFamily="@font/psr" android:layout_toEndOf="@+id/imgcycles"/>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/bicycle_stands" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/_10sdp" android:layout_toEndOf="@+id/bicycle">
+                <ImageView android:id="@+id/imgspace" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_bicycle_dock_tutorial"/>
+                <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/colorGreen" android:id="@+id/standsAvailable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3 spaces" android:layout_centerVertical="true" android:fontFamily="@font/psr" android:layout_toEndOf="@+id/imgspace"/>
+            </RelativeLayout>
+            <com.google.android.material.button.MaterialButton android:textSize="@dimen/_10sdp" android:id="@+id/direction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Directions" android:textAllCaps="false" android:fontFamily="@font/psr" android:layout_marginStart="@dimen/_20sdp" android:layout_alignParentEnd="true" android:backgroundTint="@color/colorGreen"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_12sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Distance:" android:fontFamily="@font/psr"/>
+            <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:id="@+id/distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_3sdp" android:layout_marginRight="@dimen/_3sdp" android:text="2 Minutes" android:fontFamily="@font/psr"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_12sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Time:" android:fontFamily="@font/psr"/>
+            <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:id="@+id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_3sdp" android:layout_marginRight="@dimen/_3sdp" android:text="2 Minutes" android:fontFamily="@font/psr"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

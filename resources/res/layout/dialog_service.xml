@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:orientation="vertical" android:id="@+id/frame" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/button">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxHeight="@dimen/eighty_dp" android:indeterminateOnly="true" android:minHeight="@dimen/fifty_dp" android:indeterminateTint="@color/colorGreen" style="?android:attr/progressBarStyleLarge"/>
+        </LinearLayout>
+        <com.ortiz.touchview.TouchImageView android:id="@+id/ZuMap_IV" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/zu_map"/>
+    </FrameLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@+id/button" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:translationZ="90dp" android:elevation="@dimen/_2sdp">
+        <com.google.android.material.button.MaterialButton android:textSize="@dimen/roundButtonTextSize" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/Btn_ZuWallet" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/roundButtonHeight_Maindash" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:text="Ok" android:fontFamily="@font/psr" sweet:backgroundTint="@color/colorGreen" sweet:cornerRadius="40sp" sweet:rippleColor="@color/colorGreenlight"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:id="@+id/Btn_Membership" android:background="@color/colorWhite" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:attr/selectableItemBackground">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/ET_height" android:weightSum="1">
+            <FrameLayout android:layout_gravity="center" android:id="@+id/Btn_Back" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.1">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_goback_arrow_grey" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+            </FrameLayout>
+            <EditText android:textSize="20dp" android:id="@+id/search_ET" android:background="@null" android:paddingLeft="8dp" android:layout_width="0dp" android:layout_height="match_parent" android:hint="@string/txt_hint_searchStation" android:layout_weight="0.9" android:inputType="textVisiblePassword" android:fontFamily="@font/psr"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/recentSearchLayout" android:background="@color/color_viewpager_bg" android:paddingTop="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/colorBlack" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/label_recentSearch"/>
+        <in.myinnos.alphabetsindexfastscrollrecycler.IndexFastScrollRecyclerView android:id="@+id/recentSearch_RV" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/color_viewpager_bg" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="@color/colorBlack" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/label_searchResults" android:fontFamily="@font/psr"/>
+        <in.myinnos.alphabetsindexfastscrollrecycler.IndexFastScrollRecyclerView android:id="@+id/mainSearch_RV" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

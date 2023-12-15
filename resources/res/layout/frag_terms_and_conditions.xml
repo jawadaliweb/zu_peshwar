@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/color_viewpager_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+        <LinearLayout android:gravity="top" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:orientation="vertical" android:id="@+id/frame" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.smarteist.autoimageslider.SliderView android:id="@+id/imageSlider" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" sweet:sliderAnimationDuration="600" sweet:sliderAutoCycleDirection="2" sweet:sliderAutoCycleEnabled="false" sweet:sliderIndicatorAnimationDuration="600" sweet:sliderIndicatorGravity="51" sweet:sliderIndicatorMargin="15dp" sweet:sliderIndicatorOrientation="0" sweet:sliderIndicatorPadding="2dp" sweet:sliderIndicatorRadius="3dp" sweet:sliderIndicatorSelectedColor="#5a5a5a" sweet:sliderIndicatorUnselectedColor="#fff" sweet:sliderScrollTimeInSec="1" sweet:sliderStartAutoCycle="false"/>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxHeight="@dimen/eighty_dp" android:indeterminateOnly="true" android:minHeight="@dimen/fifty_dp" android:indeterminateTint="@color/colorGreen" style="?android:attr/progressBarStyleLarge"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

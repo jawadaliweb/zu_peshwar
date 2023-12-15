@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@color/colorWhite" android:paddingLeft="8dp" android:paddingTop="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="1">
+    <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/colorBlack" android:gravity="center" android:id="@+id/arrivalTime1_TV" android:background="@color/time_background" android:padding="5dp" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:text="11:20 am" android:fontFamily="@font/psr"/>
+</LinearLayout>

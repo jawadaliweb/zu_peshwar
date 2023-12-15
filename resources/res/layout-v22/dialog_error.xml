@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/colorTransparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/Btn_TripPlanner" android:background="@drawable/rounded_dialog_bg" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="20dp">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_error" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="22dp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="5dp" android:text="Error" android:fontFamily="@font/psr"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18dp" android:textColor="@color/colorBlack" android:gravity="center" android:layout_gravity="center" android:id="@+id/msg" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="Message is Here Message is Here Message is Here Message is Here " android:fontFamily="@font/psr" android:layout_marginVertical="10dp" android:paddingHorizontal="5dp"/>
+                </FrameLayout>
+                <com.google.android.material.button.MaterialButton android:textSize="@dimen/roundButtonTextSize" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/btn_ok" android:layout_width="match_parent" android:layout_height="@dimen/roundButtonHeight_Maindash" android:layout_marginLeft="30dp" android:layout_marginTop="5dp" android:layout_marginRight="30dp" android:layout_marginBottom="5dp" android:text="@string/dialog_ok" android:fontFamily="@font/psr" android:layout_marginHorizontal="30dp" android:layout_marginVertical="5dp" sweet:backgroundTint="@color/colorGreen" sweet:cornerRadius="30sp" sweet:rippleColor="@color/colorGreenlight"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
